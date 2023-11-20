@@ -17,9 +17,10 @@ jobs:
           version: v3.10.1 # Also update in lint-and-test.yaml
       - name: Packeges
         run: |
-          mkdir -p package
-          helm package charts/* && cd package && helm repo index .
-      - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v2
+          mkdir -p public
+          helm package charts/* && cd public && helm repo index .
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
         with:
-          path: package
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
