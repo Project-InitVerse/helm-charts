@@ -1,0 +1,6 @@
+apiVersion: v2
+appVersion: 1.5.1
+description: Installs the ubic Ingress resources (required)
+name: ubic-ingress
+type: application
+version: 1.2.6
