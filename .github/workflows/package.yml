@@ -18,7 +18,7 @@ jobs:
       - name: Packeges
         run: |
           mkdir -p package
-          cd package && helm package charts/* && helm repo index .
+          helm package charts/* && cd package && helm repo index .
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v2
         with:
