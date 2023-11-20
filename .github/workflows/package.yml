@@ -1,6 +1,9 @@
 name: package
 
 on:
+  push:
+    branches:
+      - feat/pushlish
   workflow_dispatch:
 
 jobs:
