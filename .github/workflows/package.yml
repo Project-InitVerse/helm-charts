@@ -3,7 +3,7 @@ name: package
 on:
   push:
     branches:
-      - feat/pushlish
+      - feat/publish
   workflow_dispatch:
 
 jobs:
