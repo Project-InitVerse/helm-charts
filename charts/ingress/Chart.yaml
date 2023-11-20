@@ -3,4 +3,4 @@ appVersion: 1.5.1
 description: Installs the ubic Ingress resources (required)
 name: ingress
 type: application
-version: 0.1.0
+version: 1.2.6

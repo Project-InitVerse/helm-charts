@@ -1,0 +1,22 @@
+name: package
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install Helm
+        uses: azure/setup-helm@v3
+        with:
+          version: v3.10.1 # Also update in lint-and-test.yaml
+      - name: Packeges
+        run: |
+          mkdir -p package
+          cd package && helm package charts/* && helm repo index .
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v2
+        with:
+          path: package
