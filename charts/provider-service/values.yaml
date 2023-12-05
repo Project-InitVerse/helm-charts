@@ -5,10 +5,10 @@
 replicaCount: 1
 
 image:
-  repository: ghcr.io/project-ubicloud/ubic-provider-service
+  repository: ghcr.io/project-initVerse/ini-provider-service
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "fc9d1b59d167fc65cbd5649f4535394730389b4d"
+  tag: "419d9a131892bea08c46a1e66204e49aa3d7d3d6"
 
 imagePullSecrets: []
 nameOverride: ""
@@ -80,7 +80,7 @@ config:
       "OvercommitPercentStorage": "0",
       "ValidatorFactoryContract": "I43Psbq3enwAmwXGa2QejWFdd9AwV1rczE6w1GPzs6WTPmJpKbmXzKEho",
       "BidTimeOut": "600",
-      "NameSpace": "ubic-service",
+      "NameSpace": "ini-service",
       "HostNameServiceListenAddr": "0.0.0.0:28442",
       "HostPruneInterval": "600",
       "HostWebRefreshInterval": "5",

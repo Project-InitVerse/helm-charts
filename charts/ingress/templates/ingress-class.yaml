@@ -3,7 +3,7 @@ kind: IngressClass
 metadata:
   name: ingress-class
   labels:
-    ubic.net: "true"
+    ini.net: "true"
 spec:
   controller: k8s.io/ingress-nginx
 ---

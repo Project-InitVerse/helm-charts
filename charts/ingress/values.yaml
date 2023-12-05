@@ -2,7 +2,7 @@
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
 
-# Your ubic domain. Example: my.network.com
+# Your ini domain. Example: my.network.com
 # We create Ingress objects mapping to A records like provider.my.network.com
 domain: example.local
 proxy:
